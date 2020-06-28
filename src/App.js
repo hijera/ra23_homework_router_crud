@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import './App.css';
 
 import './css/bootstrap.css';
@@ -19,8 +19,8 @@ function App() {
                         </nav>
                         <PostList/>
                     </Route>
-                    <Route  path="/posts/([0-9]+)" render={props=><PostForm {...props} mode="view" />} />
-                    <Route exact path="/posts/new" render={props=><PostForm {...props} mode="create" />} />
+                    <Route path="/posts/([0-9]+)" render={props => <PostForm {...props} mode="view"/>}/>
+                    <Route exact path="/posts/new" render={props => <PostForm {...props} mode="create"/>}/>
                 </div>
             </Router>
         </PostsProvider>

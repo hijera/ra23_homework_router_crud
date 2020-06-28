@@ -8,7 +8,7 @@ PostList.propTypes = {};
 
 function PostList(props) {
     const {posts, isLoading} = useContext(PostsContext);
-    const loadingBlock =<div className="" tabIndex="-1" role="dialog">
+    const loadingBlock = <div className="" tabIndex="-1" role="dialog">
         <div className="modal-dialog">
             <div className="alert alert-info" role="alert">
                 Идет загрузка...
